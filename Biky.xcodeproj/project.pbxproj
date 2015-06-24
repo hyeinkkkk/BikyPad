@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A02884B91B39193200163FAC /* libBXSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A02884B81B39193200163FAC /* libBXSDK.a */; };
+		A02884BB1B3923D400163FAC /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02884BA1B3923D400163FAC /* ExternalAccessory.framework */; };
+		A02884BE1B39318200163FAC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02884BD1B39318200163FAC /* UIKit.framework */; };
+		A02884EB1B396A7E00163FAC /* SignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A02884EA1B396A7E00163FAC /* SignViewController.m */; };
+		A02884EF1B396AE300163FAC /* PJRSignatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = A02884EE1B396AE300163FAC /* PJRSignatureView.m */; };
+		A051FB5C1B3A721500265800 /* speech_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A051FB581B3A721500265800 /* speech_1.jpg */; };
+		A051FB5D1B3A721500265800 /* speech_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A051FB591B3A721500265800 /* speech_2.jpg */; };
+		A051FB5E1B3A721500265800 /* speech_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A051FB5A1B3A721500265800 /* speech_3.jpg */; };
+		A051FB5F1B3A721500265800 /* speech_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A051FB5B1B3A721500265800 /* speech_4.jpg */; };
+		A051FB611B3A7E7200265800 /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = A051FB601B3A7E7200265800 /* test.txt */; };
+		A051FB671B3AAABE00265800 /* Slide1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A051FB661B3AAABE00265800 /* Slide1.jpg */; };
 		A0C9AA5A1B37D6A300549227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C9AA591B37D6A300549227 /* main.m */; };
 		A0C9AA5D1B37D6A300549227 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C9AA5C1B37D6A300549227 /* AppDelegate.m */; };
 		A0C9AA601B37D6A300549227 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C9AA5F1B37D6A300549227 /* ViewController.m */; };
@@ -14,6 +25,7 @@
 		A0C9AA651B37D6A300549227 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C9AA641B37D6A300549227 /* Images.xcassets */; };
 		A0C9AA681B37D6A300549227 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C9AA661B37D6A300549227 /* LaunchScreen.xib */; };
 		A0C9AA741B37D6A300549227 /* BikyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C9AA731B37D6A300549227 /* BikyTests.m */; };
+		A0C9AA7F1B37DAA300549227 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C9AA7E1B37DAA300549227 /* PhotoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +39,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A02884AD1B39193200163FAC /* BXBarcodeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXBarcodeInfo.h; sourceTree = "<group>"; };
+		A02884AE1B39193200163FAC /* BXCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXCode.h; sourceTree = "<group>"; };
+		A02884AF1B39193200163FAC /* BXPrinterControlDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXPrinterControlDelegate.h; sourceTree = "<group>"; };
+		A02884B01B39193200163FAC /* BXPrinterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXPrinterController.h; sourceTree = "<group>"; };
+		A02884B11B39193200163FAC /* BXPrinterObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXPrinterObjects.h; sourceTree = "<group>"; };
+		A02884B21B39193200163FAC /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		A02884B31B39193200163FAC /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		A02884B41B39193200163FAC /* iControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iControllerDelegate.h; sourceTree = "<group>"; };
+		A02884B51B39193200163FAC /* InterfaceFunctionsDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterfaceFunctionsDelegate.h; sourceTree = "<group>"; };
+		A02884B61B39193200163FAC /* NetFunctionsDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetFunctionsDelegate.h; sourceTree = "<group>"; };
+		A02884B71B39193200163FAC /* UDPServerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDPServerDelegate.h; sourceTree = "<group>"; };
+		A02884B81B39193200163FAC /* libBXSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBXSDK.a; sourceTree = "<group>"; };
+		A02884BA1B3923D400163FAC /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		A02884BD1B39318200163FAC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A02884E91B396A7E00163FAC /* SignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignViewController.h; sourceTree = "<group>"; };
+		A02884EA1B396A7E00163FAC /* SignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignViewController.m; sourceTree = "<group>"; };
+		A02884ED1B396AE300163FAC /* PJRSignatureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJRSignatureView.h; sourceTree = "<group>"; };
+		A02884EE1B396AE300163FAC /* PJRSignatureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJRSignatureView.m; sourceTree = "<group>"; };
+		A051FB581B3A721500265800 /* speech_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = speech_1.jpg; sourceTree = "<group>"; };
+		A051FB591B3A721500265800 /* speech_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = speech_2.jpg; sourceTree = "<group>"; };
+		A051FB5A1B3A721500265800 /* speech_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = speech_3.jpg; sourceTree = "<group>"; };
+		A051FB5B1B3A721500265800 /* speech_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = speech_4.jpg; sourceTree = "<group>"; };
+		A051FB601B3A7E7200265800 /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		A051FB661B3AAABE00265800 /* Slide1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Slide1.jpg; sourceTree = "<group>"; };
 		A0C9AA541B37D6A300549227 /* Biky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Biky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C9AA581B37D6A300549227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0C9AA591B37D6A300549227 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +76,8 @@
 		A0C9AA6D1B37D6A300549227 /* BikyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BikyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C9AA721B37D6A300549227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0C9AA731B37D6A300549227 /* BikyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BikyTests.m; sourceTree = "<group>"; };
+		A0C9AA7D1B37DAA300549227 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		A0C9AA7E1B37DAA300549227 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +85,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A02884BE1B39318200163FAC /* UIKit.framework in Frameworks */,
+				A02884BB1B3923D400163FAC /* ExternalAccessory.framework in Frameworks */,
+				A02884B91B39193200163FAC /* libBXSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +101,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A02884AB1B39193200163FAC /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				A02884AC1B39193200163FAC /* Headers */,
+				A02884B81B39193200163FAC /* libBXSDK.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		A02884AC1B39193200163FAC /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				A02884AD1B39193200163FAC /* BXBarcodeInfo.h */,
+				A02884AE1B39193200163FAC /* BXCode.h */,
+				A02884AF1B39193200163FAC /* BXPrinterControlDelegate.h */,
+				A02884B01B39193200163FAC /* BXPrinterController.h */,
+				A02884B11B39193200163FAC /* BXPrinterObjects.h */,
+				A02884B21B39193200163FAC /* Common.h */,
+				A02884B31B39193200163FAC /* Defines.h */,
+				A02884B41B39193200163FAC /* iControllerDelegate.h */,
+				A02884B51B39193200163FAC /* InterfaceFunctionsDelegate.h */,
+				A02884B61B39193200163FAC /* NetFunctionsDelegate.h */,
+				A02884B71B39193200163FAC /* UDPServerDelegate.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		A02884BC1B3923FC00163FAC /* Framworks */ = {
+			isa = PBXGroup;
+			children = (
+				A02884BD1B39318200163FAC /* UIKit.framework */,
+				A02884BA1B3923D400163FAC /* ExternalAccessory.framework */,
+			);
+			path = Framworks;
+			sourceTree = "<group>";
+		};
+		A02884EC1B396AE300163FAC /* PJRSignatureView */ = {
+			isa = PBXGroup;
+			children = (
+				A02884ED1B396AE300163FAC /* PJRSignatureView.h */,
+				A02884EE1B396AE300163FAC /* PJRSignatureView.m */,
+			);
+			path = PJRSignatureView;
+			sourceTree = SOURCE_ROOT;
+		};
 		A0C9AA4B1B37D6A300549227 = {
 			isa = PBXGroup;
 			children = (
+				A02884EC1B396AE300163FAC /* PJRSignatureView */,
+				A02884AB1B39193200163FAC /* lib */,
 				A0C9AA561B37D6A300549227 /* Biky */,
 				A0C9AA701B37D6A300549227 /* BikyTests */,
 				A0C9AA551B37D6A300549227 /* Products */,
+				A02884BC1B3923FC00163FAC /* Framworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,13 +171,23 @@
 			isa = PBXGroup;
 			children = (
 				A0C9AA5B1B37D6A300549227 /* AppDelegate.h */,
+				A051FB661B3AAABE00265800 /* Slide1.jpg */,
 				A0C9AA5C1B37D6A300549227 /* AppDelegate.m */,
 				A0C9AA5E1B37D6A300549227 /* ViewController.h */,
 				A0C9AA5F1B37D6A300549227 /* ViewController.m */,
 				A0C9AA611B37D6A300549227 /* Main.storyboard */,
+				A051FB581B3A721500265800 /* speech_1.jpg */,
+				A051FB601B3A7E7200265800 /* test.txt */,
+				A051FB591B3A721500265800 /* speech_2.jpg */,
+				A051FB5A1B3A721500265800 /* speech_3.jpg */,
+				A051FB5B1B3A721500265800 /* speech_4.jpg */,
 				A0C9AA641B37D6A300549227 /* Images.xcassets */,
 				A0C9AA661B37D6A300549227 /* LaunchScreen.xib */,
 				A0C9AA571B37D6A300549227 /* Supporting Files */,
+				A0C9AA7D1B37DAA300549227 /* PhotoViewController.h */,
+				A0C9AA7E1B37DAA300549227 /* PhotoViewController.m */,
+				A02884E91B396A7E00163FAC /* SignViewController.h */,
+				A02884EA1B396A7E00163FAC /* SignViewController.m */,
 			);
 			path = Biky;
 			sourceTree = "<group>";
@@ -201,7 +300,13 @@
 			files = (
 				A0C9AA631B37D6A300549227 /* Main.storyboard in Resources */,
 				A0C9AA681B37D6A300549227 /* LaunchScreen.xib in Resources */,
+				A051FB671B3AAABE00265800 /* Slide1.jpg in Resources */,
 				A0C9AA651B37D6A300549227 /* Images.xcassets in Resources */,
+				A051FB5D1B3A721500265800 /* speech_2.jpg in Resources */,
+				A051FB5E1B3A721500265800 /* speech_3.jpg in Resources */,
+				A051FB5F1B3A721500265800 /* speech_4.jpg in Resources */,
+				A051FB611B3A7E7200265800 /* test.txt in Resources */,
+				A051FB5C1B3A721500265800 /* speech_1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +325,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0C9AA601B37D6A300549227 /* ViewController.m in Sources */,
+				A02884EB1B396A7E00163FAC /* SignViewController.m in Sources */,
+				A0C9AA7F1B37DAA300549227 /* PhotoViewController.m in Sources */,
 				A0C9AA5D1B37D6A300549227 /* AppDelegate.m in Sources */,
+				A02884EF1B396AE300163FAC /* PJRSignatureView.m in Sources */,
 				A0C9AA5A1B37D6A300549227 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +459,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Biky/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				New_Setting = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -361,6 +474,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Biky/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				New_Setting = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -418,6 +536,7 @@
 				A0C9AA791B37D6A300549227 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0C9AA7A1B37D6A300549227 /* Build configuration list for PBXNativeTarget "BikyTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +545,7 @@
 				A0C9AA7C1B37D6A300549227 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
