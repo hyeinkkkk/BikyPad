@@ -41,8 +41,8 @@
 
 - (UIImage *)getSignatureImage;
 - (void)clearSignature;
-
-
+- (void)createLableView:(CGRect)frame;
+- (void)setBackgroundImage:(NSString *)imageName;
 
 @end
 

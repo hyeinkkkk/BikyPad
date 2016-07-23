@@ -50,14 +50,16 @@
 }
 
 
-- (void) setBackgroundImage {
+- (void) setBackgroundImage:(NSString *)imageName {
     //set background
+//    UIGraphicsBeginImageContext(self.frame.size);
     UIGraphicsBeginImageContext(self.frame.size);
-    [[UIImage imageNamed: backgroundImage] drawInRect:self.bounds];
+    backgroundImage = imageName;
+    [[UIImage imageNamed: imageName] drawInRect:self.bounds];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     self.backgroundColor = [UIColor colorWithPatternImage:image];
-//    [[UIColor colorWithPatternImage:image] setFill];
+    [[UIColor colorWithPatternImage:image] setFill];
     //end setting background
 
 }
@@ -71,14 +73,12 @@
     if (self) {
         
         float lblHeight = 61;
-//        self.backgroundColor = [UIColor whiteColor];
+        self.backgroundColor = [UIColor whiteColor];
         
-        int value = arc4random_uniform(2) + 1;
+//        int value = arc4random_uniform(2) + 1;
 
-        backgroundImage = [NSString stringWithFormat:@"speech_%d.jpg",value];
-        NSLog(@"index? %@",backgroundImage);
-        
-        [self setBackgroundImage];
+//        backgroundImage = [NSString stringWithFormat:@"speech_%d.jpg",value];
+//        [self setBackgroundImage]; 
         
         [self setMultipleTouchEnabled:NO];
         beizerPath = [UIBezierPath bezierPath];
@@ -90,9 +90,34 @@
         lblSignature.textAlignment = NSTextAlignmentCenter;
         lblSignature.alpha = 0.3;
         [self addSubview:lblSignature];
+
+        
         
     }
     return self;
+}
+
+- (void) createLableView:(CGRect)frame{
+    UILabel * testText = [[UILabel alloc] initWithFrame:CGRectMake(0, 50, self.frame.size.width, self.frame.size.height)];//initWithFrame:CGRectMake(200, self.frame.size.height/2 - lblHeight/2, self.frame.size.width, self.frame.size.width)]; //[[UILabel alloc] init];
+    testText.text = @"플레이어 : 2~4명 \n 예상 시간 : 5분 이내 \n    게임 룰 \n  1. 중앙(달)에 플레이어가 다 모인다 \n    2. 플레이어 별로 지구로 내려갈 길을 정한다.\n    3. 시작과 동시에 각자 길을 따라 지구로 내려간다.\n    단, 숫자 1부터 10까지 순서대로 밟으면서\n 지구로 내려가야 한다.\n    4. 가장 먼저 지구에 도착한 사람이 승리한다. \n";
+    testText.textAlignment = NSTextAlignmentCenter;
+    testText.numberOfLines = 0;
+    testText.font =[UIFont fontWithName:@"Helvetica-Bold" size:30 ];
+    
+    //set background image
+    [[UIImage imageNamed: backgroundImage] drawInRect:self.bounds];
+    UIImage *image = [UIImage imageNamed:@"11.jpg"];
+    CGSize imgSize = testText.frame.size;
+    
+    UIGraphicsBeginImageContext( imgSize );
+    [image drawInRect:CGRectMake(0,0,imgSize.width,imgSize.height)];
+    UIImage* newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    testText.backgroundColor = [UIColor colorWithPatternImage:newImage];
+    
+    
+    [self addSubview:testText];
 }
 
 
@@ -178,7 +203,7 @@
     {
         UIBezierPath *rectpath = [UIBezierPath bezierPathWithRect:self.bounds];
         
-        [self setBackgroundImage];
+        [self setBackgroundImage:backgroundImage];
         
 //        [[UIColor whiteColor] setFill];
         [rectpath fill];

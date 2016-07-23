@@ -16,6 +16,16 @@
 @end
 
 @implementation SignViewController
+
+- (void)didFindPrinter:(BXPrinterController *)controller printer:(BXPrinter *)printer {
+    NSLog(@"found printer");
+    
+}
+
+- (void)msrArrived:(BXPrinterController *)controller track:(NSNumber *)track {
+    NSLog(@"msr arrived");
+}
+
 - (IBAction)clearView:(id)sender {
     [signatureView clearSignature];
 }
@@ -43,9 +53,12 @@
     
     _printer = [BXPrinter new];
     
-    _printer.address = [NSString stringWithFormat:@"192.168.1.41"];
-    _printer.port = 9100;
-    _printer.connectionClass = BXL_CONNECTIONCLASS_ETHERNET;
+    _printer.macAddress = @"74:F0:7D:E2:23:4C";
+    _printer.connectionClass = BXL_CONNECTIONCLASS_BT;
+    
+//    _printer.address = [NSString stringWithFormat:@"192.168.1.41"];
+//    _printer.port = 9100;
+//    _printer.connectionClass = BXL_CONNECTIONCLASS_ETHERNET;
     
     NSLog(@"printer %@", _printer);
     NSLog(@" pCtl %@",_pController);
@@ -108,7 +121,9 @@
     [super viewDidAppear:animated];
     
     signatureView= [[PJRSignatureView alloc] initWithFrame:CGRectMake(0, 50, self.view.bounds.size.width, self.view.bounds.size.height-200)];
+//    [signatureView createLableView:CGRectMake(0, 50, self.view.bounds.size.width, self.view.bounds.size.height-200)];
     [self.view addSubview:signatureView];
+    
     
 }
 

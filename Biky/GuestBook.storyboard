@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OU1-DM-LCZ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NotoSansKR-Bold.otf">
+            <string>NotoSansKR-Bold</string>
+            <string>NotoSansKR-Bold</string>
+            <string>NotoSansKR-Bold</string>
+            <string>NotoSansKR-Bold</string>
+        </mutableArray>
+        <mutableArray key="NotoSansKR-Regular.otf">
+            <string>NotoSansKR-Regular</string>
+            <string>NotoSansKR-Regular</string>
+            <string>NotoSansKR-Regular</string>
+            <string>NotoSansKR-Regular</string>
+            <string>NotoSansKR-Regular</string>
+            <string>NotoSansKR-Regular</string>
+            <string>NotoSansKR-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--SelectBalloon View Controller-->
+        <scene sceneID="ols-ud-3yy">
+            <objects>
+                <viewController storyboardIdentifier="SelectBalloonViewController" id="0gh-WK-kM9" userLabel="SelectBalloon View Controller" customClass="SelectBalloonViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vmL-a1-zsP"/>
+                        <viewControllerLayoutGuide type="bottom" id="fyE-wy-Ytg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7gr-ZS-QpY">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpc-pj-tHF">
+                                <rect key="frame" x="422" y="202" width="180" height="35"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="말풍선">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="AppleSDGothicNeo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="을 선택하세요.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="AppleSDGothicNeo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="R8s-xv-e14">
+                                <rect key="frame" x="94" y="244" width="866" height="444"/>
+                                <color key="backgroundColor" red="1" green="0.8889379456320734" blue="0.89480784907446154" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fNr-lt-fGh">
+                                    <size key="itemSize" width="182" height="132"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Ballon" id="8CS-te-aGe">
+                                        <rect key="frame" x="0.0" y="0.0" width="182" height="132"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="182" height="132"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i4t-n6-ejr">
+                                                    <rect key="frame" x="0.0" y="0.0" width="182" height="132"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="0gh-WK-kM9" id="j1O-AR-weB"/>
+                                    <outlet property="delegate" destination="0gh-WK-kM9" id="gEH-h3-coj"/>
+                                </connections>
+                            </collectionView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_storyplaying_small" translatesAutoresizingMaskIntoConstraints="NO" id="gvu-6r-Gf7">
+                                <rect key="frame" x="439" y="80" width="147" height="109"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottom_small" translatesAutoresizingMaskIntoConstraints="NO" id="hHV-2g-SQJ">
+                                <rect key="frame" x="381" y="696" width="263" height="22"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kgv-kU-s6k">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
+                                <items>
+                                    <navigationItem title="방명록 출력" id="PTg-Th-znK">
+                                        <barButtonItem key="leftBarButtonItem" title="종료하기" id="bOO-QP-HZP">
+                                            <color key="tintColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="clickedExit:" destination="0gh-WK-kM9" id="VlW-vR-Eto"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bbD-yh-6V5"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="balloonCollectionView" destination="R8s-xv-e14" id="Jgj-46-ged"/>
+                        <segue destination="HwS-nA-OKG" kind="show" identifier="WriteGuestBook" id="qFI-uk-n1w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Drb-bF-twE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1549" y="21"/>
+        </scene>
+        <!--DoneGuestbook View Controller-->
+        <scene sceneID="HTC-pv-IL8">
+            <objects>
+                <viewController storyboardIdentifier="DoneGuestbookViewController" id="6fl-aJ-Ar4" userLabel="DoneGuestbook View Controller" customClass="DoneGuestbookViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z73-SY-egb"/>
+                        <viewControllerLayoutGuide type="bottom" id="WCY-BS-sC0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n2P-36-LZA">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fuz-uC-Asv">
+                                <rect key="frame" x="260" y="467" width="504" height="80"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.68235294120000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans Korean" pointSize="22"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="처음으로 돌아가기">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickedBackButton:" destination="6fl-aJ-Ar4" eventType="touchUpInside" id="Ua7-xh-PVB"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_storyplaying_small" translatesAutoresizingMaskIntoConstraints="NO" id="aSl-sz-ksK">
+                                <rect key="frame" x="439" y="40" width="147" height="109"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="방명록출력" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRi-Rn-4Cw">
+                                <rect key="frame" x="459" y="197" width="106" height="24"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Bold" family="Noto Sans Korean" pointSize="21"/>
+                                <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bar_squares" translatesAutoresizingMaskIntoConstraints="NO" id="tvh-15-ZO2">
+                                <rect key="frame" x="478" y="236" width="69" height="8"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVO-S1-6jD">
+                                <rect key="frame" x="129" y="381" width="207" height="56"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Bold" family="Noto Sans Korean" pointSize="20"/>
+                                <color key="textColor" red="0.36078431370000003" green="0.68235294120000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="님의 오늘 가능한 방명록을 모두 출력하셨습니다. 손글씨 방명록을 이용해주세요." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ff-jt-gOv">
+                                <rect key="frame" x="334" y="379" width="413" height="80"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans Korean" pointSize="20"/>
+                                <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="uVO-S1-6jD" id="ALd-PW-s8X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VYq-Xh-Doj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="742" y="969"/>
+        </scene>
+        <!--WriteGuestbook View Controller-->
+        <scene sceneID="KjH-lh-u6N">
+            <objects>
+                <viewController storyboardIdentifier="WriteGuestbookViewController" id="HwS-nA-OKG" userLabel="WriteGuestbook View Controller" customClass="WriteGuestbookViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="thx-Lk-3rX"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Zc-Rb-RmW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qXL-tS-CsD">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSm-00-vcD">
+                                <rect key="frame" x="205" y="718" width="819" height="50"/>
+                                <color key="backgroundColor" red="0.35686274509803922" green="0.68235294117647061" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans Korean" pointSize="22"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="출력하기">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="printBalloon:" destination="HwS-nA-OKG" eventType="touchUpInside" id="ZeG-fi-STw"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jve-4c-aMP">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
+                                <items>
+                                    <navigationItem title="방명록 출력" id="A5M-KT-y11">
+                                        <barButtonItem key="leftBarButtonItem" title="말풍선 다시 고르기" id="hgQ-eO-8Kr">
+                                            <color key="tintColor" red="0.35686274509803922" green="0.68235294117647061" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <segue destination="l61-6q-IvJ" kind="unwind" unwindAction="unwindFromWriteGuestbook:" id="rh2-ZU-kcb"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="종료하기" id="aiY-El-cvP">
+                                            <color key="tintColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="clickedExit:" destination="HwS-nA-OKG" id="0R1-Rh-9VP"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3O-4E-Znf">
+                                <rect key="frame" x="476" y="90" width="125" height="34"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="번째 방명록">
+                                        <attributes>
+                                            <color key="NSColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="AppleSDGothicNeo-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" / 5 ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="번">
+                                        <attributes>
+                                            <color key="NSColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="AppleSDGothicNeo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2du-r1-3NA">
+                                <rect key="frame" x="428" y="90" width="47" height="31"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Bold" family="Noto Sans Korean" pointSize="20"/>
+                                <color key="textColor" red="0.91764705882352937" green="0.32941176470588235" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dw9-gZ-Cwc">
+                                <rect key="frame" x="0.0" y="718" width="205" height="50"/>
+                                <color key="backgroundColor" red="0.8784313725490196" green="0.88235294117647056" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans Korean" pointSize="22"/>
+                                <color key="tintColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="다시 쓰기">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearWriteView:" destination="HwS-nA-OKG" eventType="touchUpInside" id="Dg7-bU-RZ8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="countLabel" destination="2du-r1-3NA" id="ktL-f8-fl8"/>
+                        <segue destination="ZaP-zv-XDG" kind="show" identifier="CompleteGuestbook" id="WZL-Tw-Da4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PVV-Be-r3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="l61-6q-IvJ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2737" y="21"/>
+        </scene>
+        <!--CompleteGuestbook View Controller-->
+        <scene sceneID="fUt-Ou-ruV">
+            <objects>
+                <viewController storyboardIdentifier="CompleteGuestbookViewController" id="ZaP-zv-XDG" userLabel="CompleteGuestbook View Controller" customClass="CompleteGuestbookViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JBU-FZ-ldo"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Vg-b9-dEX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wsf-yz-X0w">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_storyplaying_small" translatesAutoresizingMaskIntoConstraints="NO" id="iYf-D5-W30">
+                                <rect key="frame" x="439" y="60" width="147" height="109"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="방명록출력" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQh-th-PDR">
+                                <rect key="frame" x="459" y="216" width="106" height="24"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Bold" family="Noto Sans Korean" pointSize="21"/>
+                                <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bar_squares" translatesAutoresizingMaskIntoConstraints="NO" id="6ps-eS-SdX">
+                                <rect key="frame" x="478" y="256" width="69" height="8"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="방명록 출력이 완료되었습니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ln2-gs-7VJ">
+                                <rect key="frame" x="384" y="329" width="256" height="25"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans Korean" pointSize="20"/>
+                                <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFi-5e-ViC">
+                                <rect key="frame" x="292" y="362" width="440" height="63"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="다시 출력하고 싶으시면 ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="AppleSDGothicNeo-Regular"/>
+                                            <font key="NSOriginalFont" size="20" name="AppleSDGothicNeo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="말풍선 다시 고르기">
+                                        <attributes>
+                                            <color key="NSColor" red="0.35686274509803922" green="0.68235294117647061" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="AppleSDGothicNeo-Regular"/>
+                                            <font key="NSOriginalFont" size="20" name="AppleSDGothicNeo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="를 누르시고,">
+                                        <attributes>
+                                            <color key="NSColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="AppleSDGothicNeo-Regular"/>
+                                            <font key="NSOriginalFont" size="20" name="AppleSDGothicNeo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="HelveticaNeue"/>
+                                            <font key="NSOriginalFont" size="20" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="그만하시려면 ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="AppleSDGothicNeo-Regular"/>
+                                            <font key="NSOriginalFont" size="20" name="AppleSDGothicNeo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="종료하기">
+                                        <attributes>
+                                            <color key="NSColor" red="0.90588235294117647" green="0.33725490196078434" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="AppleSDGothicNeo-Regular"/>
+                                            <font key="NSOriginalFont" size="20" name="AppleSDGothicNeo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="를 눌러주세요.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="AppleSDGothicNeo-Regular"/>
+                                            <font key="NSOriginalFont" size="20" name="AppleSDGothicNeo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottom_small" translatesAutoresizingMaskIntoConstraints="NO" id="M2R-IQ-1mm">
+                                <rect key="frame" x="381" y="696" width="263" height="22"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mdc-kR-24A">
+                                <rect key="frame" x="260" y="454" width="504" height="80"/>
+                                <color key="backgroundColor" red="0.35686274509999999" green="0.68235294120000001" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans Korean" pointSize="24"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="말풍선 다시 고르기">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="MNh-I3-M3X" kind="unwind" unwindAction="unwindFromWriteGuestbook:" id="LBp-zW-aYr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEB-X9-0yB">
+                                <rect key="frame" x="260" y="548" width="504" height="80"/>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.33725490200000002" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans Korean" pointSize="24"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="종료하기">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickedExit:" destination="ZaP-zv-XDG" eventType="touchUpInside" id="05z-Sp-MD1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nAE-D0-XGK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="MNh-I3-M3X" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3933" y="21"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iOl-GZ-wY3">
+            <objects>
+                <navigationController storyboardIdentifier="GuestbookNavigationController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="OU1-DM-LCZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Zg-hs-zoP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0gh-WK-kM9" kind="relationship" relationship="rootViewController" id="rxM-a6-tr8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1QG-tg-6K3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="432" y="14"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bar_squares" width="138" height="15"/>
+        <image name="bottom_small" width="263" height="22"/>
+        <image name="logo_storyplaying_small" width="147" height="109"/>
+    </resources>
+</document>

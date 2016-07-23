@@ -7,17 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4121FE951B57BEC400055E9A /* CompletePlayerCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4121FE941B57BEC400055E9A /* CompletePlayerCardViewController.m */; };
+		41C42E011B53C07000BB07B0 /* PlayerLogIntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C42E001B53C07000BB07B0 /* PlayerLogIntroViewController.m */; };
+		41C42E071B53C7CA00BB07B0 /* PlayerLog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C42E061B53C7CA00BB07B0 /* PlayerLog.storyboard */; };
+		41C42E0A1B53CB5A00BB07B0 /* PlayerLogListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C42E091B53CB5A00BB07B0 /* PlayerLogListViewController.m */; };
+		48A0812BCC57D1F22FF7BE8C /* Pods_Biky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06783A423A9AE9A6E683AFE /* Pods_Biky.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		85F30DE2CC329FACA983F7FB /* Pods_BikyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209AD42D91D97C8C9E1856CD /* Pods_BikyTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		983EEAB01B57973F00CB7D71 /* JoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 983EEAAF1B57973F00CB7D71 /* JoinViewController.m */; };
+		985142941B53B23400C5FC10 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 985142931B53B23400C5FC10 /* Constants.m */; };
+		985142951B53B23400C5FC10 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 985142931B53B23400C5FC10 /* Constants.m */; };
+		A00856611B4B65B90029BEB9 /* FloorPlay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A00856601B4B65B90029BEB9 /* FloorPlay.storyboard */; };
+		A00856641B4B68470029BEB9 /* FloorPlayListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A00856631B4B68470029BEB9 /* FloorPlayListViewController.m */; };
+		A00856671B4BBFB80029BEB9 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A00856661B4BBFB80029BEB9 /* ResultViewController.m */; };
+		A00856691B4BE0AB0029BEB9 /* Movie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A00856681B4BE0AB0029BEB9 /* Movie.storyboard */; };
+		A008566C1B4BE0D60029BEB9 /* DateListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A008566B1B4BE0D60029BEB9 /* DateListViewController.m */; };
+		A008566F1B4BF1CA0029BEB9 /* MovieListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A008566E1B4BF1CA0029BEB9 /* MovieListViewController.m */; };
+		A01437DD1B4AA2BA007F3BF5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A01437DC1B4AA2BA007F3BF5 /* Home.storyboard */; };
+		A01437E01B4AA305007F3BF5 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A01437DF1B4AA305007F3BF5 /* HomeViewController.m */; };
 		A02884B91B39193200163FAC /* libBXSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A02884B81B39193200163FAC /* libBXSDK.a */; };
 		A02884BB1B3923D400163FAC /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02884BA1B3923D400163FAC /* ExternalAccessory.framework */; };
 		A02884BE1B39318200163FAC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02884BD1B39318200163FAC /* UIKit.framework */; };
 		A02884EB1B396A7E00163FAC /* SignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A02884EA1B396A7E00163FAC /* SignViewController.m */; };
 		A02884EF1B396AE300163FAC /* PJRSignatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = A02884EE1B396AE300163FAC /* PJRSignatureView.m */; };
-		A051FB5C1B3A721500265800 /* speech_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A051FB581B3A721500265800 /* speech_1.jpg */; };
-		A051FB5D1B3A721500265800 /* speech_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A051FB591B3A721500265800 /* speech_2.jpg */; };
-		A051FB5E1B3A721500265800 /* speech_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A051FB5A1B3A721500265800 /* speech_3.jpg */; };
-		A051FB5F1B3A721500265800 /* speech_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A051FB5B1B3A721500265800 /* speech_4.jpg */; };
-		A051FB611B3A7E7200265800 /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = A051FB601B3A7E7200265800 /* test.txt */; };
-		A051FB671B3AAABE00265800 /* Slide1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A051FB661B3AAABE00265800 /* Slide1.jpg */; };
+		A035EDA31B3BF367006560B3 /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A035EDA21B3BF367006560B3 /* HTTPClient.m */; };
+		A035EDA41B3BF367006560B3 /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A035EDA21B3BF367006560B3 /* HTTPClient.m */; };
+		A036CFC51B4E4D98000CDE0C /* InputBarcodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A036CFC41B4E4D98000CDE0C /* InputBarcodeViewController.m */; };
+		A036CFC71B4E5966000CDE0C /* GuestBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A036CFC61B4E5966000CDE0C /* GuestBook.storyboard */; };
+		A036CFCE1B4E6816000CDE0C /* SelectBalloonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A036CFCD1B4E6816000CDE0C /* SelectBalloonViewController.m */; };
+		A036CFCF1B4E6816000CDE0C /* SelectBalloonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A036CFCD1B4E6816000CDE0C /* SelectBalloonViewController.m */; };
+		A036CFD21B4E69EA000CDE0C /* WriteGuestbookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A036CFD11B4E69EA000CDE0C /* WriteGuestbookViewController.m */; };
+		A036CFD31B4E69EA000CDE0C /* WriteGuestbookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A036CFD11B4E69EA000CDE0C /* WriteGuestbookViewController.m */; };
+		A036CFDF1B4EA276000CDE0C /* MovieIntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A036CFDE1B4EA276000CDE0C /* MovieIntroViewController.m */; };
+		A065B0A51B5E069B004D4727 /* AllCards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A065B0A41B5E069B004D4727 /* AllCards.storyboard */; };
+		A065B0A81B5E0751004D4727 /* AllCardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A065B0A71B5E0751004D4727 /* AllCardsViewController.m */; };
+		A06886921B4CE73500C918D8 /* PlayerCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06886911B4CE73500C918D8 /* PlayerCard.storyboard */; };
+		A06886951B4CFE3300C918D8 /* PrintCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06886941B4CFE3300C918D8 /* PrintCardViewController.m */; };
+		A06886981B4D080600C918D8 /* PrinterController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06886971B4D080600C918D8 /* PrinterController.m */; };
+		A06CD4C21B4F9023005AD6C6 /* PrintConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06CD4C11B4F9023005AD6C6 /* PrintConfirmViewController.m */; };
+		A06CD4C51B4FADE2005AD6C6 /* MovieResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06CD4C41B4FADE2005AD6C6 /* MovieResultViewController.m */; };
+		A06CD4C81B4FCDED005AD6C6 /* FloorPlayTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06CD4C71B4FCDED005AD6C6 /* FloorPlayTitleViewController.m */; };
+		A06CD4CB1B4FD221005AD6C6 /* FloorPlayResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06CD4CA1B4FD221005AD6C6 /* FloorPlayResultViewController.m */; };
+		A06CD4CE1B500492005AD6C6 /* DoneGuestbookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06CD4CD1B500492005AD6C6 /* DoneGuestbookViewController.m */; };
+		A093BD781B464003008F58FB /* SearchPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A093BD771B464003008F58FB /* SearchPlayerViewController.m */; };
+		A093E93E1B5C97B60022F8E7 /* NumberKeypadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A093E93D1B5C97B60022F8E7 /* NumberKeypadViewController.m */; };
+		A09A9EFA1B54A10900E85CB2 /* PlayerHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09A9EF91B54A10900E85CB2 /* PlayerHomeViewController.m */; };
+		A0A0ECCA1B43FD42003F22DE /* PrivacyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A0ECC91B43FD42003F22DE /* PrivacyViewController.m */; };
+		A0A0ECD11B4408C8003F22DE /* BarcodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A0ECD01B4408C8003F22DE /* BarcodeScanViewController.m */; };
+		A0A0ECD71B441272003F22DE /* CreateIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A0ECD61B441272003F22DE /* CreateIDViewController.m */; };
 		A0C9AA5A1B37D6A300549227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C9AA591B37D6A300549227 /* main.m */; };
 		A0C9AA5D1B37D6A300549227 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C9AA5C1B37D6A300549227 /* AppDelegate.m */; };
 		A0C9AA601B37D6A300549227 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C9AA5F1B37D6A300549227 /* ViewController.m */; };
@@ -26,6 +62,16 @@
 		A0C9AA681B37D6A300549227 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C9AA661B37D6A300549227 /* LaunchScreen.xib */; };
 		A0C9AA741B37D6A300549227 /* BikyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C9AA731B37D6A300549227 /* BikyTests.m */; };
 		A0C9AA7F1B37DAA300549227 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C9AA7E1B37DAA300549227 /* PhotoViewController.m */; };
+		A0D011F11B452A7600741FDE /* CompleteIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D011F01B452A7600741FDE /* CompleteIDViewController.m */; };
+		A0DFD9491B5910EC00CF8011 /* CompleteGuestbookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DFD9481B5910EC00CF8011 /* CompleteGuestbookViewController.m */; };
+		A0EF6B8B1B574B90002380EF /* NotoSansKR-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0EF6B841B574B90002380EF /* NotoSansKR-Black.otf */; };
+		A0EF6B8C1B574B90002380EF /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0EF6B851B574B90002380EF /* NotoSansKR-Bold.otf */; };
+		A0EF6B8D1B574B90002380EF /* NotoSansKR-DemiLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0EF6B861B574B90002380EF /* NotoSansKR-DemiLight.otf */; };
+		A0EF6B8E1B574B90002380EF /* NotoSansKR-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0EF6B871B574B90002380EF /* NotoSansKR-Light.otf */; };
+		A0EF6B8F1B574B90002380EF /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0EF6B881B574B90002380EF /* NotoSansKR-Medium.otf */; };
+		A0EF6B901B574B90002380EF /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0EF6B891B574B90002380EF /* NotoSansKR-Regular.otf */; };
+		A0EF6B911B574B90002380EF /* NotoSansKR-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0EF6B8A1B574B90002380EF /* NotoSansKR-Thin.otf */; };
+		A0FDE7721B5F3B1E00C7CADA /* PrinterSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FDE7711B5F3B1E00C7CADA /* PrinterSettingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +85,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		209AD42D91D97C8C9E1856CD /* Pods_BikyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BikyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33C2EED44C89625A0BC62AF0 /* Pods-BikyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BikyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BikyTests/Pods-BikyTests.release.xcconfig"; sourceTree = "<group>"; };
+		4121FE931B57BEC400055E9A /* CompletePlayerCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompletePlayerCardViewController.h; sourceTree = "<group>"; };
+		4121FE941B57BEC400055E9A /* CompletePlayerCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompletePlayerCardViewController.m; sourceTree = "<group>"; };
+		41C42DFF1B53C07000BB07B0 /* PlayerLogIntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerLogIntroViewController.h; sourceTree = "<group>"; };
+		41C42E001B53C07000BB07B0 /* PlayerLogIntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerLogIntroViewController.m; sourceTree = "<group>"; };
+		41C42E061B53C7CA00BB07B0 /* PlayerLog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlayerLog.storyboard; sourceTree = "<group>"; };
+		41C42E081B53CB5A00BB07B0 /* PlayerLogListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerLogListViewController.h; sourceTree = "<group>"; };
+		41C42E091B53CB5A00BB07B0 /* PlayerLogListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerLogListViewController.m; sourceTree = "<group>"; };
+		540F209F3A3C9D03A8D4ABE3 /* Pods-BikyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BikyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BikyTests/Pods-BikyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		983EEAAE1B57973F00CB7D71 /* JoinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoinViewController.h; sourceTree = "<group>"; };
+		983EEAAF1B57973F00CB7D71 /* JoinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoinViewController.m; sourceTree = "<group>"; };
+		985142921B53B23400C5FC10 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		985142931B53B23400C5FC10 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		A00856601B4B65B90029BEB9 /* FloorPlay.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FloorPlay.storyboard; sourceTree = "<group>"; };
+		A00856621B4B68470029BEB9 /* FloorPlayListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloorPlayListViewController.h; sourceTree = "<group>"; };
+		A00856631B4B68470029BEB9 /* FloorPlayListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloorPlayListViewController.m; sourceTree = "<group>"; };
+		A00856651B4BBFB80029BEB9 /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		A00856661B4BBFB80029BEB9 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
+		A00856681B4BE0AB0029BEB9 /* Movie.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Movie.storyboard; sourceTree = "<group>"; };
+		A008566A1B4BE0D60029BEB9 /* DateListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateListViewController.h; sourceTree = "<group>"; };
+		A008566B1B4BE0D60029BEB9 /* DateListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateListViewController.m; sourceTree = "<group>"; };
+		A008566D1B4BF1CA0029BEB9 /* MovieListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieListViewController.h; sourceTree = "<group>"; };
+		A008566E1B4BF1CA0029BEB9 /* MovieListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieListViewController.m; sourceTree = "<group>"; };
+		A01437DC1B4AA2BA007F3BF5 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		A01437DE1B4AA305007F3BF5 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		A01437DF1B4AA305007F3BF5 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		A02884AD1B39193200163FAC /* BXBarcodeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXBarcodeInfo.h; sourceTree = "<group>"; };
 		A02884AE1B39193200163FAC /* BXCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXCode.h; sourceTree = "<group>"; };
 		A02884AF1B39193200163FAC /* BXPrinterControlDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXPrinterControlDelegate.h; sourceTree = "<group>"; };
@@ -57,12 +130,47 @@
 		A02884EA1B396A7E00163FAC /* SignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignViewController.m; sourceTree = "<group>"; };
 		A02884ED1B396AE300163FAC /* PJRSignatureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJRSignatureView.h; sourceTree = "<group>"; };
 		A02884EE1B396AE300163FAC /* PJRSignatureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJRSignatureView.m; sourceTree = "<group>"; };
-		A051FB581B3A721500265800 /* speech_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = speech_1.jpg; sourceTree = "<group>"; };
-		A051FB591B3A721500265800 /* speech_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = speech_2.jpg; sourceTree = "<group>"; };
-		A051FB5A1B3A721500265800 /* speech_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = speech_3.jpg; sourceTree = "<group>"; };
-		A051FB5B1B3A721500265800 /* speech_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = speech_4.jpg; sourceTree = "<group>"; };
-		A051FB601B3A7E7200265800 /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
-		A051FB661B3AAABE00265800 /* Slide1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Slide1.jpg; sourceTree = "<group>"; };
+		A035EDA11B3BF367006560B3 /* HTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPClient.h; sourceTree = "<group>"; };
+		A035EDA21B3BF367006560B3 /* HTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPClient.m; sourceTree = "<group>"; };
+		A036CFC31B4E4D98000CDE0C /* InputBarcodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputBarcodeViewController.h; sourceTree = "<group>"; };
+		A036CFC41B4E4D98000CDE0C /* InputBarcodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputBarcodeViewController.m; sourceTree = "<group>"; };
+		A036CFC61B4E5966000CDE0C /* GuestBook.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GuestBook.storyboard; sourceTree = "<group>"; };
+		A036CFCC1B4E6816000CDE0C /* SelectBalloonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectBalloonViewController.h; sourceTree = "<group>"; };
+		A036CFCD1B4E6816000CDE0C /* SelectBalloonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectBalloonViewController.m; sourceTree = "<group>"; };
+		A036CFD01B4E69EA000CDE0C /* WriteGuestbookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteGuestbookViewController.h; sourceTree = "<group>"; };
+		A036CFD11B4E69EA000CDE0C /* WriteGuestbookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteGuestbookViewController.m; sourceTree = "<group>"; };
+		A036CFDD1B4EA276000CDE0C /* MovieIntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieIntroViewController.h; sourceTree = "<group>"; };
+		A036CFDE1B4EA276000CDE0C /* MovieIntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieIntroViewController.m; sourceTree = "<group>"; };
+		A065B0A41B5E069B004D4727 /* AllCards.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AllCards.storyboard; sourceTree = "<group>"; };
+		A065B0A61B5E0751004D4727 /* AllCardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllCardsViewController.h; sourceTree = "<group>"; };
+		A065B0A71B5E0751004D4727 /* AllCardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllCardsViewController.m; sourceTree = "<group>"; };
+		A06886911B4CE73500C918D8 /* PlayerCard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlayerCard.storyboard; sourceTree = "<group>"; };
+		A06886931B4CFE3300C918D8 /* PrintCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintCardViewController.h; sourceTree = "<group>"; };
+		A06886941B4CFE3300C918D8 /* PrintCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintCardViewController.m; sourceTree = "<group>"; };
+		A06886961B4D080600C918D8 /* PrinterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrinterController.h; sourceTree = "<group>"; };
+		A06886971B4D080600C918D8 /* PrinterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrinterController.m; sourceTree = "<group>"; };
+		A06CD4C01B4F9023005AD6C6 /* PrintConfirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintConfirmViewController.h; sourceTree = "<group>"; };
+		A06CD4C11B4F9023005AD6C6 /* PrintConfirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintConfirmViewController.m; sourceTree = "<group>"; };
+		A06CD4C31B4FADE2005AD6C6 /* MovieResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieResultViewController.h; sourceTree = "<group>"; };
+		A06CD4C41B4FADE2005AD6C6 /* MovieResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieResultViewController.m; sourceTree = "<group>"; };
+		A06CD4C61B4FCDED005AD6C6 /* FloorPlayTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloorPlayTitleViewController.h; sourceTree = "<group>"; };
+		A06CD4C71B4FCDED005AD6C6 /* FloorPlayTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloorPlayTitleViewController.m; sourceTree = "<group>"; };
+		A06CD4C91B4FD221005AD6C6 /* FloorPlayResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloorPlayResultViewController.h; sourceTree = "<group>"; };
+		A06CD4CA1B4FD221005AD6C6 /* FloorPlayResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloorPlayResultViewController.m; sourceTree = "<group>"; };
+		A06CD4CC1B500492005AD6C6 /* DoneGuestbookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoneGuestbookViewController.h; sourceTree = "<group>"; };
+		A06CD4CD1B500492005AD6C6 /* DoneGuestbookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoneGuestbookViewController.m; sourceTree = "<group>"; };
+		A093BD761B464003008F58FB /* SearchPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchPlayerViewController.h; sourceTree = "<group>"; };
+		A093BD771B464003008F58FB /* SearchPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchPlayerViewController.m; sourceTree = "<group>"; };
+		A093E93C1B5C97B60022F8E7 /* NumberKeypadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberKeypadViewController.h; sourceTree = "<group>"; };
+		A093E93D1B5C97B60022F8E7 /* NumberKeypadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberKeypadViewController.m; sourceTree = "<group>"; };
+		A09A9EF81B54A10900E85CB2 /* PlayerHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerHomeViewController.h; sourceTree = "<group>"; };
+		A09A9EF91B54A10900E85CB2 /* PlayerHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerHomeViewController.m; sourceTree = "<group>"; };
+		A0A0ECC81B43FD42003F22DE /* PrivacyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivacyViewController.h; sourceTree = "<group>"; };
+		A0A0ECC91B43FD42003F22DE /* PrivacyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivacyViewController.m; sourceTree = "<group>"; };
+		A0A0ECCF1B4408C8003F22DE /* BarcodeScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarcodeScanViewController.h; sourceTree = "<group>"; };
+		A0A0ECD01B4408C8003F22DE /* BarcodeScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeScanViewController.m; sourceTree = "<group>"; };
+		A0A0ECD51B441272003F22DE /* CreateIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateIDViewController.h; sourceTree = "<group>"; };
+		A0A0ECD61B441272003F22DE /* CreateIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateIDViewController.m; sourceTree = "<group>"; };
 		A0C9AA541B37D6A300549227 /* Biky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Biky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C9AA581B37D6A300549227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0C9AA591B37D6A300549227 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -78,6 +186,22 @@
 		A0C9AA731B37D6A300549227 /* BikyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BikyTests.m; sourceTree = "<group>"; };
 		A0C9AA7D1B37DAA300549227 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		A0C9AA7E1B37DAA300549227 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		A0D011EF1B452A7600741FDE /* CompleteIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleteIDViewController.h; sourceTree = "<group>"; };
+		A0D011F01B452A7600741FDE /* CompleteIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompleteIDViewController.m; sourceTree = "<group>"; };
+		A0DFD9471B5910EC00CF8011 /* CompleteGuestbookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleteGuestbookViewController.h; sourceTree = "<group>"; };
+		A0DFD9481B5910EC00CF8011 /* CompleteGuestbookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompleteGuestbookViewController.m; sourceTree = "<group>"; };
+		A0EF6B841B574B90002380EF /* NotoSansKR-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Black.otf"; sourceTree = "<group>"; };
+		A0EF6B851B574B90002380EF /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
+		A0EF6B861B574B90002380EF /* NotoSansKR-DemiLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-DemiLight.otf"; sourceTree = "<group>"; };
+		A0EF6B871B574B90002380EF /* NotoSansKR-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Light.otf"; sourceTree = "<group>"; };
+		A0EF6B881B574B90002380EF /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
+		A0EF6B891B574B90002380EF /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
+		A0EF6B8A1B574B90002380EF /* NotoSansKR-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Thin.otf"; sourceTree = "<group>"; };
+		A0FDE7701B5F3B1E00C7CADA /* PrinterSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrinterSettingViewController.h; sourceTree = "<group>"; };
+		A0FDE7711B5F3B1E00C7CADA /* PrinterSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrinterSettingViewController.m; sourceTree = "<group>"; };
+		A73FD3AC163AA13A5D303B77 /* Pods-Biky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Biky.release.xcconfig"; path = "Pods/Target Support Files/Pods-Biky/Pods-Biky.release.xcconfig"; sourceTree = "<group>"; };
+		D5EEA732B058C39D6B5376D8 /* Pods-Biky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Biky.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Biky/Pods-Biky.debug.xcconfig"; sourceTree = "<group>"; };
+		E06783A423A9AE9A6E683AFE /* Pods_Biky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Biky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +212,7 @@
 				A02884BE1B39318200163FAC /* UIKit.framework in Frameworks */,
 				A02884BB1B3923D400163FAC /* ExternalAccessory.framework in Frameworks */,
 				A02884B91B39193200163FAC /* libBXSDK.a in Frameworks */,
+				48A0812BCC57D1F22FF7BE8C /* Pods_Biky.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,12 +220,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85F30DE2CC329FACA983F7FB /* Pods_BikyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10FBED6099E9D70844C0015E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5EEA732B058C39D6B5376D8 /* Pods-Biky.debug.xcconfig */,
+				A73FD3AC163AA13A5D303B77 /* Pods-Biky.release.xcconfig */,
+				540F209F3A3C9D03A8D4ABE3 /* Pods-BikyTests.debug.xcconfig */,
+				33C2EED44C89625A0BC62AF0 /* Pods-BikyTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1EF735056AEE5A8745FDC2D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E06783A423A9AE9A6E683AFE /* Pods_Biky.framework */,
+				209AD42D91D97C8C9E1856CD /* Pods_BikyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A02884AB1B39193200163FAC /* lib */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +292,98 @@
 			path = PJRSignatureView;
 			sourceTree = SOURCE_ROOT;
 		};
+		A065B09E1B5E0092004D4727 /* GuestBook */ = {
+			isa = PBXGroup;
+			children = (
+				A036CFC61B4E5966000CDE0C /* GuestBook.storyboard */,
+				A036CFCC1B4E6816000CDE0C /* SelectBalloonViewController.h */,
+				A036CFCD1B4E6816000CDE0C /* SelectBalloonViewController.m */,
+				A036CFD01B4E69EA000CDE0C /* WriteGuestbookViewController.h */,
+				A036CFD11B4E69EA000CDE0C /* WriteGuestbookViewController.m */,
+				A06CD4CC1B500492005AD6C6 /* DoneGuestbookViewController.h */,
+				A06CD4CD1B500492005AD6C6 /* DoneGuestbookViewController.m */,
+				A0DFD9471B5910EC00CF8011 /* CompleteGuestbookViewController.h */,
+				A0DFD9481B5910EC00CF8011 /* CompleteGuestbookViewController.m */,
+			);
+			name = GuestBook;
+			sourceTree = "<group>";
+		};
+		A065B09F1B5E00A1004D4727 /* PlayerCard */ = {
+			isa = PBXGroup;
+			children = (
+				A06886911B4CE73500C918D8 /* PlayerCard.storyboard */,
+				4121FE931B57BEC400055E9A /* CompletePlayerCardViewController.h */,
+				4121FE941B57BEC400055E9A /* CompletePlayerCardViewController.m */,
+				A06886931B4CFE3300C918D8 /* PrintCardViewController.h */,
+				A06886941B4CFE3300C918D8 /* PrintCardViewController.m */,
+			);
+			name = PlayerCard;
+			sourceTree = "<group>";
+		};
+		A065B0A01B5E00A9004D4727 /* PlayerID */ = {
+			isa = PBXGroup;
+			children = (
+				983EEAAE1B57973F00CB7D71 /* JoinViewController.h */,
+				983EEAAF1B57973F00CB7D71 /* JoinViewController.m */,
+				A0A0ECC81B43FD42003F22DE /* PrivacyViewController.h */,
+				A0A0ECC91B43FD42003F22DE /* PrivacyViewController.m */,
+				A0A0ECD51B441272003F22DE /* CreateIDViewController.h */,
+				A0A0ECD61B441272003F22DE /* CreateIDViewController.m */,
+				A093BD761B464003008F58FB /* SearchPlayerViewController.h */,
+				A093BD771B464003008F58FB /* SearchPlayerViewController.m */,
+				A0D011EF1B452A7600741FDE /* CompleteIDViewController.h */,
+				A0D011F01B452A7600741FDE /* CompleteIDViewController.m */,
+			);
+			name = PlayerID;
+			sourceTree = "<group>";
+		};
+		A065B0A11B5E00C1004D4727 /* FloorPlay */ = {
+			isa = PBXGroup;
+			children = (
+				A00856601B4B65B90029BEB9 /* FloorPlay.storyboard */,
+				A00856621B4B68470029BEB9 /* FloorPlayListViewController.h */,
+				A00856631B4B68470029BEB9 /* FloorPlayListViewController.m */,
+				A06CD4C61B4FCDED005AD6C6 /* FloorPlayTitleViewController.h */,
+				A06CD4C71B4FCDED005AD6C6 /* FloorPlayTitleViewController.m */,
+				A06CD4C91B4FD221005AD6C6 /* FloorPlayResultViewController.h */,
+				A06CD4CA1B4FD221005AD6C6 /* FloorPlayResultViewController.m */,
+			);
+			name = FloorPlay;
+			sourceTree = "<group>";
+		};
+		A065B0A21B5E026A004D4727 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				A00856681B4BE0AB0029BEB9 /* Movie.storyboard */,
+				A036CFDD1B4EA276000CDE0C /* MovieIntroViewController.h */,
+				A036CFDE1B4EA276000CDE0C /* MovieIntroViewController.m */,
+				A008566A1B4BE0D60029BEB9 /* DateListViewController.h */,
+				A008566B1B4BE0D60029BEB9 /* DateListViewController.m */,
+				A008566D1B4BF1CA0029BEB9 /* MovieListViewController.h */,
+				A008566E1B4BF1CA0029BEB9 /* MovieListViewController.m */,
+				A06CD4C31B4FADE2005AD6C6 /* MovieResultViewController.h */,
+				A06CD4C41B4FADE2005AD6C6 /* MovieResultViewController.m */,
+			);
+			name = Movie;
+			sourceTree = "<group>";
+		};
+		A065B0A31B5E0275004D4727 /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				41C42E061B53C7CA00BB07B0 /* PlayerLog.storyboard */,
+				41C42E081B53CB5A00BB07B0 /* PlayerLogListViewController.h */,
+				41C42E091B53CB5A00BB07B0 /* PlayerLogListViewController.m */,
+				41C42DFF1B53C07000BB07B0 /* PlayerLogIntroViewController.h */,
+				41C42E001B53C07000BB07B0 /* PlayerLogIntroViewController.m */,
+				A065B0A41B5E069B004D4727 /* AllCards.storyboard */,
+				A065B0A61B5E0751004D4727 /* AllCardsViewController.h */,
+				A065B0A71B5E0751004D4727 /* AllCardsViewController.m */,
+				A0FDE7701B5F3B1E00C7CADA /* PrinterSettingViewController.h */,
+				A0FDE7711B5F3B1E00C7CADA /* PrinterSettingViewController.m */,
+			);
+			name = Admin;
+			sourceTree = "<group>";
+		};
 		A0C9AA4B1B37D6A300549227 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +393,8 @@
 				A0C9AA701B37D6A300549227 /* BikyTests */,
 				A0C9AA551B37D6A300549227 /* Products */,
 				A02884BC1B3923FC00163FAC /* Framworks */,
+				10FBED6099E9D70844C0015E /* Pods */,
+				1EF735056AEE5A8745FDC2D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,17 +410,17 @@
 		A0C9AA561B37D6A300549227 /* Biky */ = {
 			isa = PBXGroup;
 			children = (
+				A065B0A31B5E0275004D4727 /* Admin */,
+				A065B0A21B5E026A004D4727 /* Movie */,
+				A065B0A11B5E00C1004D4727 /* FloorPlay */,
+				A065B0A01B5E00A9004D4727 /* PlayerID */,
+				A065B09F1B5E00A1004D4727 /* PlayerCard */,
+				A065B09E1B5E0092004D4727 /* GuestBook */,
 				A0C9AA5B1B37D6A300549227 /* AppDelegate.h */,
-				A051FB661B3AAABE00265800 /* Slide1.jpg */,
 				A0C9AA5C1B37D6A300549227 /* AppDelegate.m */,
 				A0C9AA5E1B37D6A300549227 /* ViewController.h */,
 				A0C9AA5F1B37D6A300549227 /* ViewController.m */,
 				A0C9AA611B37D6A300549227 /* Main.storyboard */,
-				A051FB581B3A721500265800 /* speech_1.jpg */,
-				A051FB601B3A7E7200265800 /* test.txt */,
-				A051FB591B3A721500265800 /* speech_2.jpg */,
-				A051FB5A1B3A721500265800 /* speech_3.jpg */,
-				A051FB5B1B3A721500265800 /* speech_4.jpg */,
 				A0C9AA641B37D6A300549227 /* Images.xcassets */,
 				A0C9AA661B37D6A300549227 /* LaunchScreen.xib */,
 				A0C9AA571B37D6A300549227 /* Supporting Files */,
@@ -188,6 +428,27 @@
 				A0C9AA7E1B37DAA300549227 /* PhotoViewController.m */,
 				A02884E91B396A7E00163FAC /* SignViewController.h */,
 				A02884EA1B396A7E00163FAC /* SignViewController.m */,
+				A035EDA11B3BF367006560B3 /* HTTPClient.h */,
+				A035EDA21B3BF367006560B3 /* HTTPClient.m */,
+				A0A0ECCF1B4408C8003F22DE /* BarcodeScanViewController.h */,
+				A0A0ECD01B4408C8003F22DE /* BarcodeScanViewController.m */,
+				A01437DC1B4AA2BA007F3BF5 /* Home.storyboard */,
+				A01437DE1B4AA305007F3BF5 /* HomeViewController.h */,
+				A01437DF1B4AA305007F3BF5 /* HomeViewController.m */,
+				A00856651B4BBFB80029BEB9 /* ResultViewController.h */,
+				A00856661B4BBFB80029BEB9 /* ResultViewController.m */,
+				A06886961B4D080600C918D8 /* PrinterController.h */,
+				A06886971B4D080600C918D8 /* PrinterController.m */,
+				A036CFC31B4E4D98000CDE0C /* InputBarcodeViewController.h */,
+				A036CFC41B4E4D98000CDE0C /* InputBarcodeViewController.m */,
+				A06CD4C01B4F9023005AD6C6 /* PrintConfirmViewController.h */,
+				A06CD4C11B4F9023005AD6C6 /* PrintConfirmViewController.m */,
+				985142921B53B23400C5FC10 /* Constants.h */,
+				985142931B53B23400C5FC10 /* Constants.m */,
+				A09A9EF81B54A10900E85CB2 /* PlayerHomeViewController.h */,
+				A09A9EF91B54A10900E85CB2 /* PlayerHomeViewController.m */,
+				A093E93C1B5C97B60022F8E7 /* NumberKeypadViewController.h */,
+				A093E93D1B5C97B60022F8E7 /* NumberKeypadViewController.m */,
 			);
 			path = Biky;
 			sourceTree = "<group>";
@@ -195,6 +456,13 @@
 		A0C9AA571B37D6A300549227 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A0EF6B841B574B90002380EF /* NotoSansKR-Black.otf */,
+				A0EF6B851B574B90002380EF /* NotoSansKR-Bold.otf */,
+				A0EF6B861B574B90002380EF /* NotoSansKR-DemiLight.otf */,
+				A0EF6B871B574B90002380EF /* NotoSansKR-Light.otf */,
+				A0EF6B881B574B90002380EF /* NotoSansKR-Medium.otf */,
+				A0EF6B891B574B90002380EF /* NotoSansKR-Regular.otf */,
+				A0EF6B8A1B574B90002380EF /* NotoSansKR-Thin.otf */,
 				A0C9AA581B37D6A300549227 /* Info.plist */,
 				A0C9AA591B37D6A300549227 /* main.m */,
 			);
@@ -225,9 +493,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0C9AA771B37D6A300549227 /* Build configuration list for PBXNativeTarget "Biky" */;
 			buildPhases = (
+				0A5733E23A0D23968D8733BC /* Check Pods Manifest.lock */,
 				A0C9AA501B37D6A300549227 /* Sources */,
 				A0C9AA511B37D6A300549227 /* Frameworks */,
 				A0C9AA521B37D6A300549227 /* Resources */,
+				BF42A4FFEAD437A23A686C5F /* Copy Pods Resources */,
+				A67A0E91D182BB47A4E50582 /* Embed Pods Frameworks */,
+				4127CDE01B5E05B200805CDC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -242,9 +514,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0C9AA7A1B37D6A300549227 /* Build configuration list for PBXNativeTarget "BikyTests" */;
 			buildPhases = (
+				272C4039B50B3F2A58D570E9 /* Check Pods Manifest.lock */,
 				A0C9AA691B37D6A300549227 /* Sources */,
 				A0C9AA6A1B37D6A300549227 /* Frameworks */,
 				A0C9AA6B1B37D6A300549227 /* Resources */,
+				82398F948CB8704B382F6F09 /* Copy Pods Resources */,
+				74E573C0E8679EF598F17581 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -267,6 +542,7 @@
 				TargetAttributes = {
 					A0C9AA531B37D6A300549227 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = NLQ45ZZ74N;
 					};
 					A0C9AA6C1B37D6A300549227 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -299,14 +575,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0C9AA631B37D6A300549227 /* Main.storyboard in Resources */,
+				A00856691B4BE0AB0029BEB9 /* Movie.storyboard in Resources */,
+				A00856611B4B65B90029BEB9 /* FloorPlay.storyboard in Resources */,
+				A065B0A51B5E069B004D4727 /* AllCards.storyboard in Resources */,
 				A0C9AA681B37D6A300549227 /* LaunchScreen.xib in Resources */,
-				A051FB671B3AAABE00265800 /* Slide1.jpg in Resources */,
+				A01437DD1B4AA2BA007F3BF5 /* Home.storyboard in Resources */,
 				A0C9AA651B37D6A300549227 /* Images.xcassets in Resources */,
-				A051FB5D1B3A721500265800 /* speech_2.jpg in Resources */,
-				A051FB5E1B3A721500265800 /* speech_3.jpg in Resources */,
-				A051FB5F1B3A721500265800 /* speech_4.jpg in Resources */,
-				A051FB611B3A7E7200265800 /* test.txt in Resources */,
-				A051FB5C1B3A721500265800 /* speech_1.jpg in Resources */,
+				A0EF6B8B1B574B90002380EF /* NotoSansKR-Black.otf in Resources */,
+				A06886921B4CE73500C918D8 /* PlayerCard.storyboard in Resources */,
+				A0EF6B8F1B574B90002380EF /* NotoSansKR-Medium.otf in Resources */,
+				A0EF6B901B574B90002380EF /* NotoSansKR-Regular.otf in Resources */,
+				41C42E071B53C7CA00BB07B0 /* PlayerLog.storyboard in Resources */,
+				A036CFC71B4E5966000CDE0C /* GuestBook.storyboard in Resources */,
+				A0EF6B8D1B574B90002380EF /* NotoSansKR-DemiLight.otf in Resources */,
+				A0EF6B8C1B574B90002380EF /* NotoSansKR-Bold.otf in Resources */,
+				A0EF6B911B574B90002380EF /* NotoSansKR-Thin.otf in Resources */,
+				A0EF6B8E1B574B90002380EF /* NotoSansKR-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,17 +603,155 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A5733E23A0D23968D8733BC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		272C4039B50B3F2A58D570E9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4127CDE01B5E05B200805CDC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run e169f359d3eed32ea1a9cf9fa37a9a4c5f4c73f5 4044f38609b5ece596e713724d8ef9e10d1d0f458aa524b2b5e9f9674e7e7469";
+		};
+		74E573C0E8679EF598F17581 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BikyTests/Pods-BikyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82398F948CB8704B382F6F09 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BikyTests/Pods-BikyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A67A0E91D182BB47A4E50582 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Biky/Pods-Biky-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF42A4FFEAD437A23A686C5F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Biky/Pods-Biky-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A0C9AA501B37D6A300549227 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A093E93E1B5C97B60022F8E7 /* NumberKeypadViewController.m in Sources */,
+				A06CD4CB1B4FD221005AD6C6 /* FloorPlayResultViewController.m in Sources */,
+				A06886951B4CFE3300C918D8 /* PrintCardViewController.m in Sources */,
+				A0D011F11B452A7600741FDE /* CompleteIDViewController.m in Sources */,
+				A093BD781B464003008F58FB /* SearchPlayerViewController.m in Sources */,
+				4121FE951B57BEC400055E9A /* CompletePlayerCardViewController.m in Sources */,
 				A0C9AA601B37D6A300549227 /* ViewController.m in Sources */,
+				985142941B53B23400C5FC10 /* Constants.m in Sources */,
 				A02884EB1B396A7E00163FAC /* SignViewController.m in Sources */,
 				A0C9AA7F1B37DAA300549227 /* PhotoViewController.m in Sources */,
+				A06CD4C51B4FADE2005AD6C6 /* MovieResultViewController.m in Sources */,
+				A00856641B4B68470029BEB9 /* FloorPlayListViewController.m in Sources */,
+				41C42E0A1B53CB5A00BB07B0 /* PlayerLogListViewController.m in Sources */,
 				A0C9AA5D1B37D6A300549227 /* AppDelegate.m in Sources */,
 				A02884EF1B396AE300163FAC /* PJRSignatureView.m in Sources */,
+				A00856671B4BBFB80029BEB9 /* ResultViewController.m in Sources */,
+				A0A0ECD71B441272003F22DE /* CreateIDViewController.m in Sources */,
+				A0A0ECD11B4408C8003F22DE /* BarcodeScanViewController.m in Sources */,
+				A0A0ECCA1B43FD42003F22DE /* PrivacyViewController.m in Sources */,
+				A065B0A81B5E0751004D4727 /* AllCardsViewController.m in Sources */,
+				A06886981B4D080600C918D8 /* PrinterController.m in Sources */,
+				A09A9EFA1B54A10900E85CB2 /* PlayerHomeViewController.m in Sources */,
+				A008566C1B4BE0D60029BEB9 /* DateListViewController.m in Sources */,
+				A036CFDF1B4EA276000CDE0C /* MovieIntroViewController.m in Sources */,
+				A008566F1B4BF1CA0029BEB9 /* MovieListViewController.m in Sources */,
 				A0C9AA5A1B37D6A300549227 /* main.m in Sources */,
+				A0DFD9491B5910EC00CF8011 /* CompleteGuestbookViewController.m in Sources */,
+				A036CFCE1B4E6816000CDE0C /* SelectBalloonViewController.m in Sources */,
+				A036CFD21B4E69EA000CDE0C /* WriteGuestbookViewController.m in Sources */,
+				983EEAB01B57973F00CB7D71 /* JoinViewController.m in Sources */,
+				41C42E011B53C07000BB07B0 /* PlayerLogIntroViewController.m in Sources */,
+				A035EDA31B3BF367006560B3 /* HTTPClient.m in Sources */,
+				A06CD4CE1B500492005AD6C6 /* DoneGuestbookViewController.m in Sources */,
+				A06CD4C81B4FCDED005AD6C6 /* FloorPlayTitleViewController.m in Sources */,
+				A0FDE7721B5F3B1E00C7CADA /* PrinterSettingViewController.m in Sources */,
+				A036CFC51B4E4D98000CDE0C /* InputBarcodeViewController.m in Sources */,
+				A06CD4C21B4F9023005AD6C6 /* PrintConfirmViewController.m in Sources */,
+				A01437E01B4AA305007F3BF5 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +759,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				985142951B53B23400C5FC10 /* Constants.m in Sources */,
+				A035EDA41B3BF367006560B3 /* HTTPClient.m in Sources */,
 				A0C9AA741B37D6A300549227 /* BikyTests.m in Sources */,
+				A036CFD31B4E69EA000CDE0C /* WriteGuestbookViewController.m in Sources */,
+				A036CFCF1B4E6816000CDE0C /* SelectBalloonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,8 +881,16 @@
 		};
 		A0C9AA781B37D6A300549227 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5EEA732B058C39D6B5376D8 /* Pods-Biky.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Biky",
+				);
 				INFOPLIST_FILE = Biky/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -465,13 +899,22 @@
 				);
 				New_Setting = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		A0C9AA791B37D6A300549227 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A73FD3AC163AA13A5D303B77 /* Pods-Biky.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Biky",
+				);
 				INFOPLIST_FILE = Biky/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -480,11 +923,13 @@
 				);
 				New_Setting = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 		A0C9AA7B1B37D6A300549227 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 540F209F3A3C9D03A8D4ABE3 /* Pods-BikyTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -504,6 +949,7 @@
 		};
 		A0C9AA7C1B37D6A300549227 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33C2EED44C89625A0BC62AF0 /* Pods-BikyTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

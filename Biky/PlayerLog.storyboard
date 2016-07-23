@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1HX-He-on5">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Player Log Intro View Controller-->
+        <scene sceneID="3AV-ee-DyS">
+            <objects>
+                <viewController storyboardIdentifier="PlayerLogIntroViewController" id="1HX-He-on5" customClass="PlayerLogIntroViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L2o-wA-fge"/>
+                        <viewControllerLayoutGuide type="bottom" id="e8i-mg-drB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EJ4-wQ-OHa">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그를 확인합니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xj-jn-uHj">
+                                <rect key="frame" x="396" y="120" width="232" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boS-DT-5K6">
+                                <rect key="frame" x="424" y="220" width="177" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="바코드 입력하기">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickedInputButton:" destination="1HX-He-on5" eventType="touchUpInside" id="2PD-iN-cZz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="boS-DT-5K6" firstAttribute="top" secondItem="L2o-wA-fge" secondAttribute="bottom" constant="200" id="0cL-3O-eAx"/>
+                            <constraint firstAttribute="centerX" secondItem="boS-DT-5K6" secondAttribute="centerX" constant="-0.5" id="2Hz-P1-JKC"/>
+                            <constraint firstItem="2Xj-jn-uHj" firstAttribute="top" secondItem="L2o-wA-fge" secondAttribute="bottom" constant="100" id="SyP-cQ-4Ss"/>
+                            <constraint firstAttribute="centerX" secondItem="2Xj-jn-uHj" secondAttribute="centerX" id="ewJ-T7-hH5"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QEr-2l-SI4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="618" y="-245"/>
+        </scene>
+        <!--Player Log List View Controller-->
+        <scene sceneID="2Cd-ng-j6x">
+            <objects>
+                <viewController storyboardIdentifier="PlayerLogListViewController" id="qP7-Us-TtO" customClass="PlayerLogListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pNO-U2-k1l"/>
+                        <viewControllerLayoutGuide type="bottom" id="7TE-mm-CG1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cOR-Xm-lHV">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYb-nr-t7l">
+                                <rect key="frame" x="528" y="20" width="1" height="1024"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="ugE-rJ-CLh"/>
+                                    <constraint firstAttribute="height" constant="1024" id="z4P-6M-TQM"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="dfn-PR-1sX">
+                                <rect key="frame" x="10" y="100" width="508" height="658"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Hr4-oq-rAy">
+                                <rect key="frame" x="539" y="100" width="475" height="658"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3C-KM-vwe">
+                                <rect key="frame" x="10" y="50" width="508" height="48"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjn-HM-Hzw">
+                                <rect key="frame" x="539" y="50" width="475" height="48"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wD-lh-XMk">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <items>
+                                    <navigationItem id="Q7U-Fz-b0P">
+                                        <nil key="title"/>
+                                        <barButtonItem key="leftBarButtonItem" title="바코드 인식하러 가기" id="hQT-Hu-6NZ" userLabel="바코드 인식하러 가기">
+                                            <connections>
+                                                <segue destination="hW8-HH-Pir" kind="unwind" unwindAction="unwindFromPlayerLogListView:" id="eG3-If-L57"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="홈 화면으로 가기" id="unt-q3-AoM">
+                                            <connections>
+                                                <action selector="goToHome:" destination="qP7-Us-TtO" id="puY-yU-A72"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0W-Y9-EAD">
+                                <rect key="frame" x="397" y="59" width="113" height="30"/>
+                                <state key="normal" title="카드 출력 이전으로">
+                                    <color key="titleColor" red="0.91764705879999997" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="restorePrintStatus:" destination="qP7-Us-TtO" eventType="touchUpInside" id="iEG-Ds-xJO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fYb-nr-t7l" firstAttribute="leading" secondItem="f3C-KM-vwe" secondAttribute="trailing" constant="10" id="0QM-fK-Ql9"/>
+                            <constraint firstItem="dfn-PR-1sX" firstAttribute="top" secondItem="f3C-KM-vwe" secondAttribute="bottom" constant="2" id="3ye-L6-h6d"/>
+                            <constraint firstItem="M0W-Y9-EAD" firstAttribute="leading" secondItem="cOR-Xm-lHV" secondAttribute="leadingMargin" constant="381" id="8Zk-B1-8Ri"/>
+                            <constraint firstItem="rjn-HM-Hzw" firstAttribute="top" secondItem="pNO-U2-k1l" secondAttribute="bottom" constant="30" id="9o5-ia-P8a"/>
+                            <constraint firstItem="Hr4-oq-rAy" firstAttribute="leading" secondItem="fYb-nr-t7l" secondAttribute="trailing" constant="10" id="B2X-Hc-EjZ"/>
+                            <constraint firstItem="fYb-nr-t7l" firstAttribute="top" secondItem="pNO-U2-k1l" secondAttribute="bottom" id="EAs-t8-cvX"/>
+                            <constraint firstItem="M0W-Y9-EAD" firstAttribute="top" secondItem="6wD-lh-XMk" secondAttribute="bottom" constant="15" id="Esg-5d-kbr"/>
+                            <constraint firstItem="rjn-HM-Hzw" firstAttribute="leading" secondItem="fYb-nr-t7l" secondAttribute="trailing" constant="10" id="F0t-Nb-OjZ"/>
+                            <constraint firstItem="7TE-mm-CG1" firstAttribute="top" secondItem="Hr4-oq-rAy" secondAttribute="bottom" constant="10" id="GCe-ud-Ysg"/>
+                            <constraint firstItem="f3C-KM-vwe" firstAttribute="top" secondItem="pNO-U2-k1l" secondAttribute="bottom" constant="30" id="NqH-bM-GhG"/>
+                            <constraint firstItem="dfn-PR-1sX" firstAttribute="leading" secondItem="cOR-Xm-lHV" secondAttribute="leading" constant="10" id="PvI-j1-cpw"/>
+                            <constraint firstItem="dfn-PR-1sX" firstAttribute="top" secondItem="pNO-U2-k1l" secondAttribute="bottom" constant="80" id="Tzw-h4-tpj"/>
+                            <constraint firstItem="f3C-KM-vwe" firstAttribute="leading" secondItem="cOR-Xm-lHV" secondAttribute="leading" constant="10" id="b68-zD-dao"/>
+                            <constraint firstItem="fYb-nr-t7l" firstAttribute="leading" secondItem="dfn-PR-1sX" secondAttribute="trailing" constant="10" id="c8G-eq-eT5"/>
+                            <constraint firstAttribute="centerX" secondItem="fYb-nr-t7l" secondAttribute="centerX" constant="-16" id="epP-TP-eJr"/>
+                            <constraint firstAttribute="trailing" secondItem="6wD-lh-XMk" secondAttribute="trailing" id="h13-sZ-SRs"/>
+                            <constraint firstItem="6wD-lh-XMk" firstAttribute="leading" secondItem="cOR-Xm-lHV" secondAttribute="leading" id="h1J-Qd-jcQ"/>
+                            <constraint firstItem="6wD-lh-XMk" firstAttribute="top" secondItem="cOR-Xm-lHV" secondAttribute="top" id="iFX-kB-NBn"/>
+                            <constraint firstItem="7TE-mm-CG1" firstAttribute="top" secondItem="dfn-PR-1sX" secondAttribute="bottom" constant="10" id="ihu-Lc-TyF"/>
+                            <constraint firstItem="Hr4-oq-rAy" firstAttribute="top" secondItem="pNO-U2-k1l" secondAttribute="bottom" constant="80" id="n0C-dT-X0K"/>
+                            <constraint firstItem="Hr4-oq-rAy" firstAttribute="top" secondItem="rjn-HM-Hzw" secondAttribute="bottom" constant="2" id="pxO-V5-ne1"/>
+                            <constraint firstAttribute="trailing" secondItem="Hr4-oq-rAy" secondAttribute="trailing" constant="10" id="swM-u5-Dyw"/>
+                            <constraint firstAttribute="trailing" secondItem="rjn-HM-Hzw" secondAttribute="trailing" constant="10" id="wpx-qn-aUG"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="cardKeywordLabel" destination="f3C-KM-vwe" id="83M-A4-wEa"/>
+                        <outlet property="cardTableView" destination="dfn-PR-1sX" id="4oa-tP-hcI"/>
+                        <outlet property="movieTableView" destination="Hr4-oq-rAy" id="c0W-F4-wmM"/>
+                        <outlet property="seenMovieListLabel" destination="rjn-HM-Hzw" id="DLn-FI-09g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Smt-ih-fWW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="hW8-HH-Pir" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1813" y="-214"/>
+        </scene>
+    </scenes>
+</document>

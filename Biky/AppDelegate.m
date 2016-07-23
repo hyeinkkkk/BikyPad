@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "HTTPClient.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +20,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    HTTPClient *client = [HTTPClient httpClient];
+    client.commonErrorCallback = ^(NSString *errorMessage) {
+        UIAlertController *alertController = [UIAlertController
+                                              alertControllerWithTitle:@"통신 에러"
+                                              message:errorMessage
+                                              preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction* ok = [UIAlertAction
+                             actionWithTitle:@"OK"
+                             style:UIAlertActionStyleDefault
+                             handler:^(UIAlertAction * action)
+                             {
+                                 [alertController dismissViewControllerAnimated:YES completion:nil];
+                                 
+                             }];
+        [alertController addAction:ok];
+        [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:NO completion:NULL];
+    };
+    
+//    [Fabric with:@[CrashlyticsKit]];
     return YES;
 }
 

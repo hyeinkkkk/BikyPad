@@ -15,6 +15,7 @@
     PJRSignatureView *signatureView;
     BXPrinterController* _pController;
     BXPrinter * _printer;
+    __weak IBOutlet UILabel *testLabel;
 
 }
 

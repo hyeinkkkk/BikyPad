@@ -22,14 +22,15 @@
 
 @implementation PhotoViewController
 
+- (void)msrArrived:(BXPrinterController *)controller track:(NSNumber *)track {
+    NSLog(@"msr arrived");
+}
+
 - (IBAction)printPaper:(id)sender {
     _pController.textEncoding = BXL_TEXTENCODING_KSC5601;
     _pController.textSize = BXL_TS_2WIDTH | BXL_TS_4HEIGHT;
 
     NSLog(@"connect ??? %d",[_pController connect]);
-//    NSString * txt = @"플레이어 : 2~4명 \n   예상 시간 : 5분 이내 \n    게임 룰 \n    1. 중앙(달)에 플레이어가 다 모인다 \n    2. 플레이어 별로 지구로 내려갈 길을 정한다.\n    3. 시작과 동시에 각자 길을 따라 지구로 내려간다.\n    단, 숫자 1부터 10까지 순서대로 밟으면서 지구로 내려가야 한다.\n    4. 가장 먼저 지구에 도착한 사람이 승리한다. \n";
-//    [_pController printText:[NSString stringWithFormat:@" %@",txt]];
-    
     [_pController printText:[NSString stringWithFormat:@" %@",self.textName.text]];
     [self printImage:self.imageView.image];
     
@@ -85,10 +86,13 @@
     [_pController open];
     
     _printer = [BXPrinter new];
+    
+    _printer.macAddress = @"74:F0:7D:E2:23:4C"; //black
+    _printer.connectionClass = BXL_CONNECTIONCLASS_BT;
 
-    _printer.address = [NSString stringWithFormat:@"192.168.1.95"];
-    _printer.port = 9100;
-    _printer.connectionClass = BXL_CONNECTIONCLASS_ETHERNET;
+//    _printer.address = [NSString stringWithFormat:@"192.168.1.95"];
+//    _printer.port = 9100;
+//    _printer.connectionClass = BXL_CONNECTIONCLASS_ETHERNET;
 
     NSLog(@"printer %@", _printer);
     NSLog(@" pCtl %@",_pController);
